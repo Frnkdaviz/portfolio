@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frank Davis Narh — Network Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ─── SIDEBAR ─────────────────────────────────────── -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <div class="sidebar-brand">
+      <img src="favicon.svg" class="brand-favicon" alt=""/>
+      <span class="brand-name">NetEng Pro</span>
+    </div>
+    <button class="sidebar-collapse-btn" id="sidebarToggle" title="Collapse sidebar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+  </div>
+  <div class="profile-block">
+    <div class="avatar-wrap">
+      <img src="frank.jpg" alt="Frank Davis Narh" class="avatar" id="avatarImg"/>
+      <span class="avatar-status"></span>
+    </div>
+    <div class="profile-info">
+      <span class="profile-name" id="sb-name">Frank Davis Narh</span>
+      <span class="profile-role" id="sb-role">Network Ops Engineer</span>
+    </div>
+  </div>
+  <!-- Nav links injected by JS based on section order & visibility -->
+  <nav class="nav" id="sidebarNav"></nav>
+  <div class="sidebar-footer">
+    <a class="btn-cv" href="Frank_Davis_Narh_CV.pdf" download>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span class="nav-label">Download CV</span>
+    </a>
+  </div>
+</aside>
+
+<!-- ─── MAIN ─────────────────────────────────────────── -->
+<main class="main" id="main">
+  <header class="topbar">
+    <button class="topbar-hamburger" id="mobileMenuBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="topbar-brand">
+      <img src="favicon.svg" class="brand-favicon" alt=""/>
+      <span>NetEng Pro</span>
+    </div>
+    <nav class="topbar-nav" id="topbarNav"></nav>
+    <div class="topbar-right">
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn-cv-top" href="Frank_Davis_Narh_CV.pdf" download>Download CV</a>
+      <div class="topbar-avatar"><img src="frank.jpg" alt="Frank"/></div>
+    </div>
+  </header>
+
+  <!-- Sections container — JS injects sections in order -->
+  <div id="sectionsContainer"></div>
+
+</main>
+
+<!-- ─── SECTION TEMPLATES ────────────────────────────── -->
+
+<template id="tpl-home">
+  <section id="home-section" class="page-section">
+    <div class="hero">
+      <div class="hero-photo-wrap">
+        <img src="frank.jpg" alt="Frank Davis Narh" class="hero-photo" id="heroPhoto"/>
+      </div>
+      <div class="hero-content">
+        <span class="hero-tag" id="hero-tag">NETWORK OPERATIONS ENGINEER</span>
+        <h1 class="hero-headline" id="hero-headline">Expert Network<br/>Engineer</h1>
+        <p class="hero-sub" id="hero-sub">I monitor, maintain, and troubleshoot robust network infrastructures — keeping uptime high and outage durations low.</p>
+        <div class="hero-btns">
+          <a class="btn-primary" id="heroProjectsBtn" href="#projects-section">View My Projects</a>
+          <a class="btn-outline" href="#contact-section">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><span class="stat-val" id="stat-exp">4+</span><span class="stat-lbl">Years Experience</span></div>
+      <div class="stat-card"><span class="stat-val" id="stat-nodes">100+</span><span class="stat-lbl">Nodes Monitored</span></div>
+      <div class="stat-card"><span class="stat-val" id="stat-certs-count">3</span><span class="stat-lbl">Certifications</span></div>
+    </div>
+    <div class="section-block">
+      <h2 class="section-heading">Network Monitoring Tools</h2>
+      <div class="tools-grid" id="toolsGrid"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-projects">
+  <section id="projects-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Projects</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-simulations">
+  <section id="simulations-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Network Simulations</h2>
+      <p class="section-sub">Hands-on lab simulations and topology designs I have built and configured.</p>
+      <div class="sims-grid" id="simsGrid"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-skills">
+  <section id="skills-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Technical Proficiency</h2>
+      <div class="skills-boxes" id="skillsBoxes"></div>
+    </div>
+    <div class="section-block">
+      <h2 class="section-heading">Roles I Am Open To</h2>
+      <div class="roles-chips" id="rolesChips"></div>
+    </div>
+    <div class="section-block">
+      <h2 class="section-heading" style="text-align:center">Career History</h2>
+      <div class="career-track" id="careerTrack"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-experience">
+  <section id="experience-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Work Experience</h2>
+      <div class="exp-list" id="expList"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-certifications">
+  <section id="certifications-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Certifications</h2>
+      <div class="certs-full-grid" id="certsFullGrid"></div>
+      <div class="ongoing-card" id="ongoingCard2">
+        <div class="ongoing-title">Ongoing Learning</div>
+        <div class="ongoing-text" id="ongoingText2"></div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-contact">
+  <section id="contact-section" class="page-section">
+    <div class="section-block">
+      <h2 class="section-heading">Get In Touch</h2>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <div class="contact-items" id="contactItems"></div>
+          <div class="social-links" id="socialLinks"></div>
+          <div class="email-form-card">
+            <h3 class="email-form-title">Send Me a Message</h3>
+            <div class="form-row-2">
+              <div class="form-grp"><label>Your Name</label><input type="text" id="contactName" placeholder="John Smith" class="cfield"/></div>
+              <div class="form-grp"><label>Your Email</label><input type="email" id="contactEmail" placeholder="john@company.com" class="cfield"/></div>
+            </div>
+            <div class="form-grp"><label>Subject</label><input type="text" id="contactSubject" placeholder="Hiring — Network Engineer" class="cfield"/></div>
+            <div class="form-grp"><label>Message</label><textarea id="contactMessage" rows="5" placeholder="Hi Frank, I'd like to discuss..." class="cfield"></textarea></div>
+            <button class="btn-send-email" onclick="sendEmail()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Email
+            </button>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-photo-frame">
+            <img src="frank.jpg" alt="Frank Davis Narh" class="contact-photo"/>
+          </div>
+          <div class="contact-photo-name" id="contact-photo-name">Frank Davis Narh</div>
+          <div class="contact-photo-role" id="contact-photo-role">Network Operations Engineer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

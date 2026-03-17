@@ -1,0 +1,83 @@
+{
+  "profile": {
+    "name": "Frank Davis Narh",
+    "title": "Network Operations Engineer",
+    "heroBadge": "NETWORK OPERATIONS ENGINEER",
+    "heroHeadline": "Expert Network\nEngineer",
+    "heroSub": "I monitor, maintain, and troubleshoot robust network infrastructures — keeping uptime high and outage durations low.",
+    "summary": "A dedicated Network Engineer with strong expertise in monitoring, maintaining, troubleshooting and optimizing networks. Proficient in TCP/IP with solid working knowledge of MPLS, GPON, DWDM and system configurations.",
+    "yearsExperience": "4+",
+    "nodesManaged": "100+",
+    "certCount": "3",
+    "ongoingLearning": "Currently preparing for CCNA certification (Cisco Systems) and Google Professional Cloud Network Engineer."
+  },
+  "roles": [
+    "Network Engineer",
+    "Network Operations Center Engineer",
+    "Network Infrastructure Engineer",
+    "Data Center Engineer",
+    "NOC Lead"
+  ],
+  "skills": [
+    { "name": "Network Monitoring",                     "level": 95 },
+    { "name": "TCP/IP & Routing Protocols",              "level": 90 },
+    { "name": "Incident Management",                     "level": 92 },
+    { "name": "MPLS / GPON / DWDM",                      "level": 85 },
+    { "name": "Routing & Switching",                     "level": 87 },
+    { "name": "Data Center Operations",                  "level": 82 },
+    { "name": "Network Documentation",                   "level": 88 },
+    { "name": "Fiber Optics",                            "level": 80 },
+    { "name": "Network Infrastructure Troubleshooting",  "level": 90 },
+    { "name": "Customer Support & Communication",        "level": 86 }
+  ],
+  "monitoringTools": [
+    { "name": "SolarWinds",    "desc": "Advanced performance monitoring and configuration management for enterprise networks." },
+    { "name": "Zabbix",        "desc": "Open-source enterprise network monitoring with custom alerting and dashboards." },
+    { "name": "Cacti",         "desc": "Network graphing and data collection using RRDtool for trend analysis." },
+    { "name": "Adva Ensemble", "desc": "Optical network management and real-time service monitoring platform." },
+    { "name": "Nokia AMS",     "desc": "Broadband access management system for subscriber and device control." },
+    { "name": "Nokia NFMP",    "desc": "Network and fault management platform for carrier-grade infrastructure." }
+  ],
+  "certifications": [
+    { "name": "Certified in Cybersecurity",  "issuer": "(ISC)²",              "icon": "shield" },
+    { "name": "AWS Cloud Practitioner",      "issuer": "Amazon Web Services", "icon": "cloud"  },
+    { "name": "CCNA – Routing & Switching",  "issuer": "Open Labs Ghana",     "icon": "network"}
+  ],
+  "experience": [
+    {
+      "company": "CSQUARED",
+      "role": "Network Operations Engineer",
+      "period": "Apr 2024 – Present",
+      "location": "Accra, Ghana",
+      "bullets": [
+        "Monitor network performance using Nokia NFMP, Cacti and Adva Ensemble.",
+        "Troubleshoot service outages and resolve customer issues, ensuring timely restoration of services.",
+        "Ensure data center reliability — monitoring cooling systems and conducting weekly backup generator inspections.",
+        "Coordinate with vendors and internal field teams for troubleshooting and site maintenance.",
+        "Track deployed hardware inventory including serial numbers and warranty information.",
+        "Upgrade systems to latest versions to improve performance, compatibility and security."
+      ]
+    },
+    {
+      "company": "SEATEC TELECOM SERVICES LIMITED",
+      "role": "Network / Telecom Engineer",
+      "period": "Nov 2022 – Mar 2024",
+      "location": "Tema, Ghana",
+      "bullets": [
+        "Assisted in designing and implementing network infrastructure — switches, routers, access points.",
+        "Collaborated with teams to plan and execute network upgrades and new deployments.",
+        "Documented network configurations, procedures, and troubleshooting guides.",
+        "Provided technical support and training to end-users and colleagues.",
+        "Conducted routine maintenance and fault resolution at customer organisations across Ghana."
+      ]
+    }
+  ],
+  "contact": {
+    "email": "frankdavisnarh@gmail.com",
+    "phone": "+233-531035950",
+    "location": "Accra, Ghana",
+    "availability": "Open to remote & on-site roles",
+    "linkedin": "https://www.linkedin.com/in/franknarh/",
+    "github": "https://github.com/franknarh"
+  }
+}
